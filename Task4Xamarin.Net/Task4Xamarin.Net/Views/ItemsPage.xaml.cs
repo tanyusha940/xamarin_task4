@@ -25,6 +25,13 @@ namespace Task4Xamarin.Net.Views
             BindingContext = viewModel = new ItemsViewModel();
         }
 
+        private void OnButtonClicked(object sender, System.EventArgs e)
+        {
+            Button button = (Button)sender;
+            button.Text = "Нажато!";
+            button.BackgroundColor = Color.Red;
+        }
+
         private void OnStepperValueChanged(object sender, ValueChangedEventArgs e)
         {
             if (headerStepper != null)

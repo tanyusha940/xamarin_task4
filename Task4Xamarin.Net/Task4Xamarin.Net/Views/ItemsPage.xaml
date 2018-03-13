@@ -16,7 +16,7 @@
                         <x:String>Чуть-чуть</x:String>
                         <x:String>На веселе</x:String>
                         <x:String>Еще немного и хватит</x:String>
-                        <x:String>JavaScript</x:String>
+                        <x:String>В говно</x:String>
                     </Picker.Items>
                 </Picker>
                 <Label x:Name="headerStepper" Text="Количество человек" FontSize="Large" />
@@ -55,6 +55,9 @@
                         </ListView.ItemTemplate>
                     </ListView>
                 </StackLayout>
+                <Button Text = "Подсчитать" FontSize="Large" BorderWidth="1"
+        HorizontalOptions="Center" VerticalOptions="CenterAndExpand"
+        Clicked="OnButtonClicked" />
             </StackLayout>
         </Grid>
     </ContentPage.Content>
