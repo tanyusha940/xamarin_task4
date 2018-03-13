@@ -27,7 +27,7 @@ namespace Task4Xamarin.Net.Views
 
         void picker_SelectedIndexChanged(object sender, EventArgs e)
         {
-            header.Text = "Вы выбрали: " + picker.Items[picker.SelectedIndex];
+            headerPickter.Text = "Вы выбрали: " + picker.Items[picker.SelectedIndex];
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)

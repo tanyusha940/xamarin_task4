@@ -10,13 +10,13 @@
     <ContentPage.Content>
         <Grid>
             <StackLayout>
-                <Label x:Name="header" Text="Языки программирования" FontSize="Large" />
+                <Label x:Name="headerPickter" Text="Степень опьянения:" FontSize="Large" />
                 <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged">
                     <Picker.Items>
-                        <x:String>C#</x:String>
-                        <x:String>C/C++</x:String>
+                        <x:String>Чуть-чуть</x:String>
+                        <x:String>На веселе</x:String>
+                        <x:String>Еще немного и хватит</x:String>
                         <x:String>JavaScript</x:String>
-                        <x:String>PHP</x:String>
                     </Picker.Items>
                 </Picker>
                 <StackLayout>
