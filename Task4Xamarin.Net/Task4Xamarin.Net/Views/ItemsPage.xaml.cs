@@ -25,6 +25,12 @@ namespace Task4Xamarin.Net.Views
             BindingContext = viewModel = new ItemsViewModel();
         }
 
+        private void OnStepperValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            if (headerStepper != null)
+                headerStepper.Text = String.Format("Будет пить: {0:F1}", e.NewValue);
+        }
+
         void picker_SelectedIndexChanged(object sender, EventArgs e)
         {
             headerPickter.Text = "Вы выбрали: " + picker.Items[picker.SelectedIndex];

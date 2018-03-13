@@ -19,6 +19,8 @@
                         <x:String>JavaScript</x:String>
                     </Picker.Items>
                 </Picker>
+                <Label x:Name="headerStepper" Text="Количество человек" FontSize="Large" />
+                <Stepper Minimum="0" Maximum="100" Increment="1" ValueChanged="OnStepperValueChanged" />
                 <StackLayout>
                     <ListView x:Name="ItemsListView" 
                 ItemsSource="{Binding Items}"
